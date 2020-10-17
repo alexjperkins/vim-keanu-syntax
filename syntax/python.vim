@@ -103,8 +103,6 @@ else
     syn match   pythonFunction    '\%([^[:cntrl:][:space:][:punct:][:digit:]]\|_\)\%([^[:cntrl:][:punct:][:space:]]\|_\)*' display contained
     syn match   pythonAsync '\v\.@<!<await>'
     syn match   pythonAsync '\v\.@<!<async>' nextgroup=pythonFunction skipwhite
-    syn match   pythonAsync '\v\.@<!<async>'
-    syn match   pythonAsync '\<async\s\>'
     syn cluster pythonExpression contains=pythonStatement,pythonRepeat,pythonConditional,pythonOperator,pythonNumber,pythonHexNumber,pythonOctNumber,pythonBinNumber,pythonFloat,pythonString,pythonBytes,pythonBoolean,pythonNone,pythonSingleton,pythonBuiltinObj,pythonBuiltinFunc,pythonBuiltinType,pythonAsync
 endif
 
